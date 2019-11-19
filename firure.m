@@ -51,7 +51,7 @@ set(gca,'XTick', x1(1,1):x1(1,3)-x1(1,1):x1(1,size(x1,2)));
 set(gca,'YTick', y1(1,1):y1(3,1)-y1(1,1):y1(size(y1,1),1));
 colormap parula
 %-------------------------------------------------------------------------------------------------------
-[xData, yData, zData] = prepareSurfaceData( x, y, ey*2);
+[xData, yData, zData] = prepareSurfaceData( x, y, ey);
 % Set up fittype and options.
 ft = fittype( 'poly22' );
 % Fit model to data.
